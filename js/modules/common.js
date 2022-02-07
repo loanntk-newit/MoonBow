@@ -134,7 +134,7 @@ var tabletW = 1024,
                   .to(".thumbs .front", 1, { delay: 3, autoAlpha: 1 }, "s2")
                   .to(".thumbs .back", 1, { delay: 3, autoAlpha: 0 }, "s2");
             } else sw <= tabletW && BY.DEVICE.people();
-          } else "pClient" === pageId && screenHorizontal && BY.CLIENT.init();
+          } else "pConnect" === pageId && screenHorizontal && BY.CLIENT.init();
         },
       },
     ],
@@ -162,7 +162,7 @@ var BY = {
       $("#pWorkDetail").length &&
         (BY.WORKDETAIL.init(), screenHorizontal && BY.WORK.init(), BY.clound()),
       $("#pOurWork").length && BY.clound(),
-      $("#pClient").length && (BY.CLIENT.init(), BY.clound()),
+      $("#pConnect").length && (BY.CLIENT.init(), BY.clound()),
       $("#pAbout").length && (BY.clound(), BY.ABOUT.init()),
       sw < 1025 && BY.FUNC.disableHoverOnMobile(),
       (ipadproHorizontal || ipadproVertical) &&
