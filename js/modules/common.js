@@ -88,7 +88,7 @@ var tabletW = 1024,
                     a(), $(".ovlLink").hide();
                   },
                 }))
-              : "pWorkDetail" === pageId
+              : "pCourseDetail" === pageId
               ? (BY.WORKDETAIL.init(),
                 TweenMax.from(e.next.container, 1, {
                   delay: 0.7,
@@ -124,7 +124,7 @@ var tabletW = 1024,
           )
             sw < tabletW && BY.DEVICE.home();
           else if ("pOurWork" === pageId);
-          else if ("pWorkDetail" === pageId);
+          else if ("pCourseDetail" === pageId);
           else if ("pPeople" === pageId) {
             if (screenHorizontal || ipadproHorizontal) {
               if ((BY.PEOPLE.init(), ipadproHorizontal))
@@ -159,7 +159,7 @@ var BY = {
         BY.FUNC.hidePreloader();
       }, 1e3),
       sw <= tabletW && BY.DEVICE.home()),
-      $("#pWorkDetail").length &&
+      $("#pCourseDetail").length &&
         (BY.WORKDETAIL.init(), screenHorizontal && BY.WORK.init(), BY.clound()),
       $("#pOurWork").length && BY.clound(),
       $("#pConnect").length && (BY.CLIENT.init(), BY.clound()),
@@ -807,19 +807,19 @@ var BY = {
       )
         .to($(".bar"), 0.5, { right: -130, ease: Power4.easeOut }, "s")
         .to(
-          $(".videoDetail .left, #pWorkDetail .brand"),
+          $(".videoDetail .left, #pCourseDetail .brand"),
           1.2,
           { x: "-150%", ease: Power4.easeOut },
           "s"
         )
         .to(
-          $(".videoDetail .right, #pWorkDetail .copy"),
+          $(".videoDetail .right, #pCourseDetail .copy"),
           1.2,
           { x: "150%", ease: Power4.easeOut },
           "s"
         )
         .to(
-          $("#pWorkDetail .pageTitle"),
+          $("#pCourseDetail .pageTitle"),
           1,
           {
             y: -150,
@@ -871,19 +871,19 @@ var BY = {
                   )
                   .to($(".bar"), 0.5, { right: 0, ease: Power4.easeOut }, "c")
                   .to(
-                    $(".videoDetail .left, #pWorkDetail .brand"),
+                    $(".videoDetail .left, #pCourseDetail .brand"),
                     1.2,
                     { x: "0%", ease: Power4.easeOut },
                     "c"
                   )
                   .to(
-                    $(".videoDetail .right, #pWorkDetail .copy"),
+                    $(".videoDetail .right, #pCourseDetail .copy"),
                     1.2,
                     { x: "0%", ease: Power4.easeOut },
                     "c"
                   )
                   .to(
-                    $("#pWorkDetail .pageTitle"),
+                    $("#pCourseDetail .pageTitle"),
                     1.2,
                     {
                       y: 0,
@@ -915,19 +915,19 @@ var BY = {
           )
           .to($(".bar"), 0.5, { right: -130, ease: Power4.easeOut }, "s")
           .to(
-            $(".jsGallery .left, #pWorkDetail .brand"),
+            $(".jsGallery .left, #pCourseDetail .brand"),
             1.2,
             { x: "-150%", ease: Power4.easeOut },
             "s"
           )
           .to(
-            $(".jsGallery .right, #pWorkDetail .copy"),
+            $(".jsGallery .right, #pCourseDetail .copy"),
             1.2,
             { x: "150%", ease: Power4.easeOut },
             "s"
           )
           .to(
-            $("#pWorkDetail .pageTitle"),
+            $("#pCourseDetail .pageTitle"),
             1,
             { y: -150, ease: Power4.easeOut },
             "s"
@@ -1011,19 +1011,19 @@ var BY = {
                   )
                   .to($(".bar"), 0.5, { right: 0, ease: Power4.easeOut }, "c")
                   .to(
-                    $(".jsGallery .left, #pWorkDetail .brand"),
+                    $(".jsGallery .left, #pCourseDetail .brand"),
                     1.2,
                     { x: "0%", ease: Power4.easeOut },
                     "c"
                   )
                   .to(
-                    $(".jsGallery .right, #pWorkDetail .copy"),
+                    $(".jsGallery .right, #pCourseDetail .copy"),
                     1.2,
                     { x: "0%", ease: Power4.easeOut },
                     "c"
                   )
                   .to(
-                    $("#pWorkDetail .pageTitle"),
+                    $("#pCourseDetail .pageTitle"),
                     1.2,
                     { y: 0, ease: Power4.easeOut },
                     "c"
