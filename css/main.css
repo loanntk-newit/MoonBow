@@ -114,18 +114,26 @@ select {
     background: 0 0;
 }
 @font-face {
-    font-family: Conv_SVN-GilroyLight;
-    src: url(../fonts/SVN-GilroyLight.eot);
-    src: local("☺"), url(../fonts/SVN-GilroyLight.woff) format("woff"),
-        url(../fonts/SVN-GilroyLight.ttf) format("truetype"), url(../fonts/SVN-GilroyLight.svg) format("svg");
+    font-family: NunitoSans-Light;
+    src: url(../fonts/NunitoSans-Light.eot);
+    src: local("☺"), url(../fonts/NunitoSans-Light.woff) format("woff"),
+        url(../fonts/NunitoSans-Light.ttf) format("truetype"), url(../fonts/NunitoSans-Light.svg) format("svg");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: Conv_SVN-GilroyBold;
-    src: url(../fonts/SVN-GilroyBold.eot);
-    src: local("☺"), url(../fonts/SVN-GilroyBold.woff) format("woff"),
-        url(../fonts/SVN-GilroyBold.ttf) format("truetype"), url(../fonts/SVN-GilroyBold.svg) format("svg");
+    font-family: NunitoSans-Regular;
+    src: url(../fonts/NunitoSans-Regular.eot);
+    src: local("☺"), url(../fonts/NunitoSans-Regular.woff) format("woff"),
+        url(../fonts/NunitoSans-Regular.ttf) format("truetype"), url(../fonts/NunitoSans-Regular.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: NunitoSans-Bold;
+    src: url(../fonts/NunitoSans-Bold.eot);
+    src: local("☺"), url(../NunitoSans-Bold.woff) format("woff"),
+        url(../fonts/NunitoSans-Bold.ttf) format("truetype"), url(../fonts/NunitoSans-Bold.svg) format("svg");
     font-weight: 400;
     font-style: normal;
 }
@@ -319,7 +327,7 @@ body {
     max-width: 100%;
     min-height: 100%;
     background: #fff;
-    font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Light, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #000;
@@ -395,7 +403,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     margin: 0;
     font-weight: 300;
 }
@@ -599,24 +607,6 @@ sub {
     top: 47%;
     left: 65%;
 }
-.leftBar .text:before {
-    content: "";
-    height: 1px;
-    width: 60px;
-    background: #000;
-    position: absolute;
-    top: 50%;
-    left: 0;
-}
-.leftBar .text:after {
-    content: "";
-    height: 1px;
-    width: 60px;
-    background: #000;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
 .logo {
     display: block;
     position: relative;
@@ -727,7 +717,7 @@ sub {
     background: url(../images/ar2.png) center/50% no-repeat #b0d248;
 }
 .barLinks p.ourProject {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     font-size: 25px;
 }
 .barLinks p.ourProject:before {
@@ -852,14 +842,14 @@ sub {
 }
 .ourWorkContent ul li.active h4,
 .ourWorkContent ul li.display h4 {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .ourWorkContent ul li h4 {
     text-transform: uppercase;
     font-size: 50px;
     padding-bottom: 20px;
     line-height: 1;
-    font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Regular, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .ourWorkContent ul li h4 a {
     color: #000;
@@ -882,7 +872,7 @@ sub {
     padding-right: 50px;
 }
 .ourWorkContent ul li .listWorks p a {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #000;
 }
 .ourWorkContent ul li .listWorks p a:hover {
@@ -902,7 +892,7 @@ sub {
     background: url(../images/i_video.png) center/cover no-repeat;
 }
 .ourWorkContent ul li p a:hover {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #fff;
 }
 .ovl_bg {
@@ -2030,7 +2020,7 @@ sub {
     background-size: 150%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #navMenu li a:hover .char {
     opacity: 1;
@@ -2162,7 +2152,7 @@ sub {
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pAbout .copy p {
     font-size: 35px;
@@ -2171,7 +2161,7 @@ sub {
 }
 #pAbout .copy h4 {
     font-size: 45px;
-    font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Regular, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     text-transform: uppercase;
     padding-bottom: 50px;
 }
@@ -2197,7 +2187,7 @@ sub {
     margin-bottom: 10px;
 }
 #pAbout #copyInfo p strong {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pAbout #copyServices h4 {
     padding-bottom: 0;
@@ -2326,7 +2316,7 @@ sub {
     padding-bottom: 40px;
 }
 #pConnect .copy .ourConnect b {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pConnect .connectSocials {
     display: flex;
@@ -2536,7 +2526,7 @@ sub {
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .ourPeople li .text h5 {
     font-size: 25px;
@@ -2778,16 +2768,16 @@ sub {
     display: block !important;
 }
 #pOurWork .ourWorkContent li.display h4 {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pOurWork .ourWorkContent li h4 {
-    font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Regular, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     font-size: 80px;
     line-height: 1;
     padding-bottom: 15px;
 }
 #pOurWork .ourWorkContent li h5 {
-    font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Regular, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     font-size: 60px;
     line-height: 1;
     padding: 15px 0;
@@ -2807,7 +2797,7 @@ sub {
     color: #e6e6e6;
 }
 #pOurWork .ourWorkContent li.active h4 {
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pOurWork .ourWorkContent li h4 a:hover{
     color: #fff;
@@ -2938,7 +2928,7 @@ sub {
     background-size: 150%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .brandEle {
     position: relative;
@@ -2993,7 +2983,7 @@ sub {
 .btnPlayVideo p {
     text-transform: uppercase;
     font-size: 16px;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     padding: 0 0 5px 35px;
     line-height: 1.1;
 }
@@ -3600,7 +3590,7 @@ canvas[resize] {
     background-size: 150%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Conv_SVN-GilroyBold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .peopleWrap {
     position: absolute;
@@ -3877,10 +3867,6 @@ canvas[resize] {
     .leftBar .text {
         font-size: 15px;
         width: 470px;
-    }
-    .leftBar .text:after,
-    .leftBar .text:before {
-        width: 50px;
     }
     .socials a {
         width: 42px;
@@ -4177,10 +4163,6 @@ canvas[resize] {
         font-size: 13px;
         width: 390px;
         left: 58%;
-    }
-    .leftBar .text:after,
-    .leftBar .text:before {
-        width: 45px;
     }
     .socials {
         left: 58%;
@@ -5018,10 +5000,6 @@ canvas[resize] {
         font-size: 22px;
         width: 60vw;
         left: 20vw;
-    }
-    .leftBar .text:after,
-    .leftBar .text:before {
-        content: none;
     }
     .socials a {
         width: 55px;
@@ -6061,10 +6039,7 @@ canvas[resize] {
         width: 60vw;
         left: 20vw;
     }
-    .leftBar .text:after,
-    .leftBar .text:before {
-        content: none;
-    }
+
     .leftBar .socials {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -6979,7 +6954,7 @@ canvas[resize] {
         transform: scale(0.4) rotate(-55deg);
     }
     #pAbout .copy h4 strong {
-        font-family: Conv_SVN-GilroyLight, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+        font-family: NunitoSans-Regular, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
         font-weight: 300;
     }
     .socials a.phone {
