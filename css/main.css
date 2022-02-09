@@ -2540,9 +2540,6 @@ sub {
 }
 .ourPeople li .text {
     display: block;
-    width: calc(100% - 50vh - 170px);
-    float: left;
-    padding: 0 0 0 150px;
 }
 .ourPeople li .text p {
     font-size: 35px;
@@ -2550,11 +2547,24 @@ sub {
     line-height: 1.2;
     color: #333132;
 }
+.ourPeople li .text table {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.ourPeople li .text table td,
+.ourPeople li .text table th{
+    vertical-align: top;
+    padding: 0.75rem;
+    border: 2px solid #000;
+}
+.ourPeople li .text table p {
+    padding: 0 !important;
+}
 .ourPeople li .text h4 {
     font-size: 100px;
     text-transform: uppercase;
     padding-bottom: 50px;
-    line-height: 1;
+    line-height: unset;
     color: #fff;
 }
 .ourPeople li .text h4 span {
@@ -3975,9 +3985,6 @@ canvas[resize] {
         font-size: 30px;
         padding-right: 150px;
     }
-    .ourPeople li .text {
-        padding: 0 0 0 140px;
-    }
     .ourPeople li .thumb {
         margin-top: 80px;
     }
@@ -4355,7 +4362,7 @@ canvas[resize] {
         font-size: 25px;
     }
     .ourPeople li .text {
-        padding: 0 0 0 120px;
+        padding: 0 0 0 60px;
     }
     #pPeople .pageElms img:nth-child(1) {
         right: 50px;
@@ -6255,7 +6262,7 @@ canvas[resize] {
     .ourPeople li .text,
     .ourPeople li:nth-child(even) .text {
         height: auto;
-        padding: 0 110px;
+        padding: 0 50px;
         width: 100%;
     }
     .ourPeople li .text h4 {
