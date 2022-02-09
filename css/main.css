@@ -2340,14 +2340,14 @@ sub {
     z-index: 2;
 }
 #pConnect .copy .ourConnect {
-    padding-top: 250px;
-    padding-left: 250px;
+    padding-top: 50px;
+    padding-left: 300px;
 }
 #pConnect .copy .ourConnect p {
     padding: 0 60px 50px 0;
     line-height: 1.3;
     font-size: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 #pConnect .copy .ourConnect b {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
@@ -2356,28 +2356,39 @@ sub {
     display: flex;
     gap: 40px;
 }
+.img-connect{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.img-connect.address{
+    background: url(../images/icons/address.png) center/contain no-repeat;
+}
+.img-connect.phone{
+    background: url(../images/icons/phone.png) center/contain no-repeat;
+}
+.img-connect.email{
+    background: url(../images/icons/email.png) center/contain no-repeat;
+}
+.img-connect.website{
+    background: url(../images/icons/website.png) center/contain no-repeat;
+}
 .connectSocials a {
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: transform .3s;
+}
+.connectSocials a:hover {
+    transform: scale(1.5);
 }
 .connectSocials a.fb {
-    background: url(../images/phone.png) center/cover no-repeat #fff;
-}
-.connectSocials a.fb:hover {
-    background: url(../images/phone1.png) center/cover no-repeat #b0d248;
+    background: url(../images/icons/fb.png) center/contain no-repeat;
 }
 .connectSocials a.insta {
-    background: url(../images/phone.png) center/cover no-repeat #fff;
-}
-.connectSocials a.insta:hover {
-    background: url(../images/phone1.png) center/cover no-repeat #b0d248;
+    background: url(../images/icons/insta.png) center/contain no-repeat;
 }
 .connectSocials a.ytb {
-    background: url(../images/phone.png) center/cover no-repeat #fff;
-}
-.connectSocials a.ytb:hover {
-    background: url(../images/phone1.png) center/cover no-repeat #b0d248;
+    background: url(../images/icons/ytb.png) center/contain no-repeat;
 }
 #pConnect .pageElms {
     left: 90px;
