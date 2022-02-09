@@ -2376,19 +2376,28 @@ sub {
 .connectSocials a {
     width: 50px;
     height: 50px;
-    transition: transform .3s;
+    transition: transform .2s;
 }
 .connectSocials a:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .connectSocials a.fb {
     background: url(../images/icons/fb.png) center/contain no-repeat;
 }
+.connectSocials a.fb:hover {
+    background: url(../images/icons/fb-white.png) center/contain no-repeat;
+}
 .connectSocials a.insta {
     background: url(../images/icons/insta.png) center/contain no-repeat;
 }
+.connectSocials a.insta:hover {
+    background: url(../images/icons/insta-white.png) center/contain no-repeat;
+}
 .connectSocials a.ytb {
     background: url(../images/icons/ytb.png) center/contain no-repeat;
+}
+.connectSocials a.ytb:hover {
+    background: url(../images/icons/ytb-white.png) center/contain no-repeat;
 }
 #pConnect .pageElms {
     left: 90px;
