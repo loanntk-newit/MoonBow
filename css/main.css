@@ -871,18 +871,18 @@ sub {
 .ourWorkContent ul li .listWorks p:nth-child(odd) {
     padding-right: 50px;
 }
-.ourWorkContent ul li .listWorks p a {
+.ourWorkContent ul li .listWorks p span {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #000;
 }
-.ourWorkContent ul li .listWorks p a:hover {
+.ourWorkContent ul li .listWorks p span:hover {
     color: #b0d248;
 }
-.ourWorkContent ul li p a {
+.ourWorkContent ul li p span {
     color: #000;
     position: relative;
 }
-.ourWorkContent ul li p a:after {
+.ourWorkContent ul li p span:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -891,7 +891,7 @@ sub {
     right: -25px;
     background: url(../images/i_video.png) center/cover no-repeat;
 }
-.ourWorkContent ul li p a:hover {
+.ourWorkContent ul li p span:hover {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #fff;
 }
@@ -2783,7 +2783,7 @@ sub {
     padding: 15px 0;
     text-transform: uppercase;
 }
-#pOurWork .ourWorkContent li p a:after {
+#pOurWork .ourWorkContent li p span:after {
     width: 25px;
     height: 25px;
     top: 0;
@@ -2816,10 +2816,10 @@ sub {
 #pOurWork .ourWorkContent .listWorks p:nth-child(odd) {
     padding-right: 50px;
 }
-#pOurWork .ourWorkContent .listWorks p a {
+#pOurWork .ourWorkContent .listWorks p span {
     color: #000;
 }
-#pOurWork .ourWorkContent .listWorks p a:hover {
+#pOurWork .ourWorkContent .listWorks p span:hover {
     color: #fff;
 }
 #pOurWork .nano > .nano-pane {
@@ -4602,7 +4602,7 @@ canvas[resize] {
         -ms-transform: scale(0.6);
         transform: scale(0.6);
     }
-    .ourWorkContent ul li p a:after {
+    .ourWorkContent ul li p span:after {
         content: "";
         width: 20px;
         height: 20px;
@@ -4968,13 +4968,13 @@ canvas[resize] {
         padding-left: 150px;
         width: calc(100% - 50vh - 120px);
     }
-    #pOurWork .ourWorkContent li p a:after {
+    #pOurWork .ourWorkContent li p span:after {
         width: 20px;
         height: 20px;
         top: 0;
         right: -30px;
     }
-    .ourWorkContent ul li p a:after {
+    .ourWorkContent ul li p span:after {
         width: 15px;
         height: 15px;
         top: 0;
@@ -5600,13 +5600,13 @@ canvas[resize] {
     .barContain .item {
         padding: 90px 20px 80px 0;
     }
-    #pOurWork .ourWorkContent li p a:after {
+    #pOurWork .ourWorkContent li p span:after {
         width: 20px;
         height: 20px;
         top: -4px;
         right: -25px;
     }
-    .ourWorkContent ul li p a:after {
+    .ourWorkContent ul li p span:after {
         width: 10px;
         height: 10px;
         top: 0;
@@ -5965,7 +5965,7 @@ canvas[resize] {
         right: -60px;
         width: 320px;
     }
-    #pOurWork .ourWorkContent li p a:after {
+    #pOurWork .ourWorkContent li p span:after {
         width: 20px;
         height: 20px;
         top: 0;
@@ -6601,7 +6601,7 @@ canvas[resize] {
         font-size: 18px;
         width: 100%;
     }
-    .ourWorkContent ul li p a:after {
+    .ourWorkContent ul li p span:after {
         width: 12px;
         height: 12px;
         top: 0;
@@ -6763,7 +6763,7 @@ canvas[resize] {
     #pOurWork .ourWorkContent .listWorks p:nth-child(odd) {
         padding-right: 20px;
     }
-    #pOurWork .ourWorkContent li p a:after {
+    #pOurWork .ourWorkContent li p span:after {
         width: 15px;
         height: 15px;
         top: -2px;
