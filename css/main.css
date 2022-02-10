@@ -2560,11 +2560,18 @@ sub {
     margin-right: 50px;
     margin-bottom: 50px;
 }
+
+.ourPeople li .text table p{
+    font-size: 20px;
+} 
 .ourPeople li .text table td,
 .ourPeople li .text table th{
     vertical-align: top;
     padding: 0.75rem;
     border: 2px solid #000;
+}
+.ourPeople li .text table th{
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 .ourPeople li .text table p {
     padding: 0 !important;
