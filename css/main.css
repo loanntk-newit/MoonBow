@@ -2560,7 +2560,9 @@ sub {
     margin-right: 50px;
     margin-bottom: 50px;
 }
-
+.ourPeople li .text .table-show-mb{
+    display: none;
+}
 .ourPeople li .text table p{
     font-size: 20px;
 } 
@@ -6028,6 +6030,13 @@ canvas[resize] {
         -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
         transform: scale(0.7);
+    }
+    .ourPeople li .text table{
+        display: none;
+    }
+    .ourPeople li .text .table-show-mb{
+        display: block;
+        margin-bottom: 80px;
     }
     #pConnect .copy {
         left: 80px;
