@@ -870,18 +870,22 @@ sub {
 .ourWorkContent ul li .listWorks p:nth-child(odd) {
     padding-right: 50px;
 }
-.ourWorkContent ul li .listWorks p span {
+.ourWorkContent ul li .listWorks p span,
+.ourWorkContent ul li .listWorks p a {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #000;
 }
-.ourWorkContent ul li .listWorks p span:hover {
+.ourWorkContent ul li .listWorks p span:hover,
+.ourWorkContent ul li .listWorks p a:hover {
     color: #b0d248;
 }
-.ourWorkContent ul li p span {
+.ourWorkContent ul li p span,
+.ourWorkContent ul li p a {
     color: #000;
     position: relative;
 }
-.ourWorkContent ul li p span:after {
+.ourWorkContent ul li p span:after,
+.ourWorkContent ul li p a:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -890,7 +894,8 @@ sub {
     right: -25px;
     background: url(../images/i_video.png) center/cover no-repeat;
 }
-.ourWorkContent ul li p span:hover {
+.ourWorkContent ul li p span:hover,
+.ourWorkContent ul li p a:hover {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
     color: #fff;
 }
@@ -2882,10 +2887,12 @@ sub {
 #pOurWork .ourWorkContent .listWorks p:nth-child(odd) {
     padding-right: 50px;
 }
-#pOurWork .ourWorkContent .listWorks p span {
+#pOurWork .ourWorkContent .listWorks p span,
+#pOurWork .ourWorkContent .listWorks p a {
     color: #000;
 }
-#pOurWork .ourWorkContent .listWorks p span:hover {
+#pOurWork .ourWorkContent .listWorks p span:hover,
+#pOurWork .ourWorkContent .listWorks p a:hover {
     color: #fff;
 }
 #pOurWork .nano > .nano-pane {

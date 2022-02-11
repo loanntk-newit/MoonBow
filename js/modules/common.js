@@ -338,14 +338,20 @@ var BY = {
     init: function () {
       new TimelineLite();
       $(".nano").nanoScroller({ sliderMaxHeight: 20 }),
-        $(".jsPeopleTab li").on("click", function () {
-          var e = $(this).index();
-          $(this).hasClass("active") ||
+      $(".jsPeopleTab li").on("click", function () {
+        var e = $(this).index();
+        $(this).hasClass("active") ||
             ($(".jsPeopleTab li").removeClass("active"),
-            $(this).addClass("active"),
             $(".peopleWrap .item").removeClass("display"),
-            $(".peopleWrap .item:eq(" + e + ")").addClass("display"));
-        });
+            setTimeout(function(){
+              $(".jsPeopleTab li:eq(" + e + ")").addClass("active");
+              $(".peopleWrap .item:eq(" + e + ")").addClass("display");
+            }, 100));
+      });
+      var a = location.hash;
+      if (a != "") {
+        $(a).click();
+      }
     },
   },
   DEVICE: {
@@ -387,6 +393,10 @@ var BY = {
             $(".peopleWrap .item").removeClass("display"),
             $(".peopleWrap .item:eq(" + e + ")").addClass("display"));
         });
+      var a = location.hash;
+      if (a != "") {
+        $(a).click();
+      }
     },
     bar: function () {
       var e = window.innerHeight;
