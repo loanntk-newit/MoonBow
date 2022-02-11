@@ -2349,12 +2349,20 @@ sub {
     font-size: 25px;
     padding-bottom: 30px;
 }
+#pConnect .copy .ourConnect a,
+#pConnect .copy .ourConnect a:hover,
+#pConnect .copy .ourConnect a:focus,
+#pConnect .copy .ourConnect a:active {
+    color: #000;
+}
 #pConnect .copy .ourConnect b {
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
 #pConnect .connectSocials {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 .img-connect{
     width: 25px;
@@ -2362,21 +2370,24 @@ sub {
     margin-right: 20px;
 }
 .img-connect.address{
-    background: url(../images/icons/address.png) center/contain no-repeat;
+    background: url(../images/icons/address.png) center bottom/contain no-repeat;
 }
 .img-connect.phone{
-    background: url(../images/icons/phone.png) center/contain no-repeat;
+    background: url(../images/icons/phone.png) center bottom/contain no-repeat;
 }
 .img-connect.email{
-    background: url(../images/icons/email.png) center/contain no-repeat;
+    background: url(../images/icons/email.png) center bottom/contain no-repeat;
 }
 .img-connect.website{
-    background: url(../images/icons/website.png) center/contain no-repeat;
+    background: url(../images/icons/website.png) center bottom/contain no-repeat;
 }
 .connectSocials a {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     transition: transform .2s;
+}
+.connectSocials p {
+    padding: 0 !important;
 }
 .connectSocials a:hover {
     transform: scale(1.2);
@@ -2607,24 +2618,6 @@ sub {
     position: relative;
     padding: 20px 0 15px;
     margin-bottom: 50px;
-}
-.ourPeople li .text h5:before {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.ourPeople li .text h5:after {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 .ourPeople li:nth-child(even) .thumb {
     float: right;
@@ -6039,9 +6032,12 @@ canvas[resize] {
         margin-bottom: 80px;
     }
     #pConnect .copy {
-        left: 80px;
+        left: 60px;
         top: 75px;
         bottom: 100px;
+    }
+    #pConnect .copy .ourConnect{
+        padding-left: 200px;
     }
     .ourClient {
         padding: 20px 100px;
