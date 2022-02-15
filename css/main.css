@@ -3365,7 +3365,7 @@ canvas[resize] {
     -webkit-transform: rotate(-30deg) scale(0.8);
     -ms-transform: rotate(-30deg) scale(0.8);
     transform: rotate(-30deg) scale(0.8);
-    background-image: url(../images/ht2.png);
+    background-image: url(../images/elm/ufo.png);
     background-size: 18750px 150px;
     width: 100%;
     height: 100%;
@@ -3394,7 +3394,7 @@ canvas[resize] {
     left: 35%;
 }
 .hanhtinh4 > div {
-    background-image: url(../images/ht3.png);
+    background-image: url(../images/elm/ht.png);
     background-size: 9375px 75px;
     width: 100%;
     height: 100%;
