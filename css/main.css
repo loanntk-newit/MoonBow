@@ -3248,7 +3248,7 @@ canvas[resize] {
 }
 #circleCanvas > div {
     background-image: url(../images/menu.jpg);
-    background-size: 48000px 300px;
+    background-size: 60000px 300px;
     width: 300px;
     height: 300px;
     -webkit-animation: 8s steps(160) infinite circleCanvas;
