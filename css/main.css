@@ -2778,6 +2778,10 @@ sub {
     -webkit-animation: 4.15s infinite alternate bounce;
     animation: 4.15s infinite alternate bounce;
 }
+.homeElms.display .hanhtinh5 {
+    -webkit-animation: 4.25s infinite alternate bounce;
+    animation: 4.25s infinite alternate bounce;
+}
 .elm.run.hanhtinh1 > img {
     opacity: 0;
 }
@@ -2787,8 +2791,8 @@ sub {
     animation: 3.5s steps(126) infinite playhanhtinh1;
 }
 .elm.run.hanhtinh2 > div {
-    -webkit-animation: 3.5s steps(126) infinite playhanhtinh2;
-    animation: 3.5s steps(126) infinite playhanhtinh2;
+    /* -webkit-animation: 3.5s steps(126) infinite playhanhtinh2;
+    animation: 3.5s steps(126) infinite playhanhtinh2; */
 }
 .elm.run.hanhtinh3 > div {
     -webkit-animation: 3.5s steps(125) infinite playhanhtinh3;
@@ -2957,6 +2961,13 @@ sub {
     transform: scale(1.5);
 }
 .brand .pageElms .hanhtinh2 {
+    right: 5%;
+    top: 265px;
+    left: auto;
+    -webkit-animation: 4.75s infinite alternate bounce;
+    animation: 4.75s infinite alternate bounce;
+}
+.brand .pageElms .hanhtinh5 {
     right: 5%;
     top: 265px;
     left: auto;
@@ -3267,8 +3278,8 @@ canvas[resize] {
     left: 18%;
 }
 .hanhtinh1 > div {
-    background-image: url(../images/ht1.png);
-    background-size: 37800px 300px;
+    background: url(../images/elm/ht1.png) center/contain repeat-x;
+    background-size: 100% auto;
     width: 300px;
     height: 300px;
     opacity: 0;
@@ -3280,7 +3291,7 @@ canvas[resize] {
     transform: scale(0.7);
 }
 .hanhtinh1 > div.ht5 {
-    background-image: url(../images/ht5.png);
+    background-image: url(../images/elm/ht5.png);
     background-size: 19000px 250px;
 }
 .hanhtinh1 > img {
@@ -3311,8 +3322,24 @@ canvas[resize] {
     left: 24%;
 }
 .hanhtinh2 > div {
-    background-image: url(../images/elm/ht2.png);
-    background-size: 100% 100%;
+    background: url(../images/elm/ht2.png) center/contain repeat-y;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-15deg) scale(0.8);
+    -ms-transform: rotate(-15deg) scale(0.8);
+    transform: rotate(-15deg) scale(0.8);
+}
+.hanhtinh5 {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 180px;
+    left: 24%;
+}
+.hanhtinh5 > div {
+    background: url(../images/elm/ht5.png) center/contain repeat-x;
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
     -webkit-transform: rotate(-15deg) scale(0.8);
@@ -3328,12 +3355,12 @@ canvas[resize] {
     -ms-transform: rotate(-48deg) scale(0.6);
     transform: rotate(-48deg) scale(0.6);
 }
-.hanhtinh2.small2 {
+.hanhtinh5.small2 {
     top: -170px;
     left: auto;
     right: 26%;
 }
-.hanhtinh2.small2 > div {
+.hanhtinh5.small2 > div {
     -webkit-transform: rotate(-48deg) scale(0.8);
     -ms-transform: rotate(-48deg) scale(0.8);
     transform: rotate(-48deg) scale(0.8);
@@ -3365,8 +3392,8 @@ canvas[resize] {
     -webkit-transform: rotate(-30deg) scale(0.8);
     -ms-transform: rotate(-30deg) scale(0.8);
     transform: rotate(-30deg) scale(0.8);
-    background-image: url(../images/elm/ufo.png);
-    background-size: 18750px 150px;
+    background: url(../images/elm/ufo.png) center/contain repeat-x;
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
 }
@@ -3394,8 +3421,8 @@ canvas[resize] {
     left: 35%;
 }
 .hanhtinh4 > div {
-    background-image: url(../images/elm/ht.png);
-    background-size: 9375px 75px;
+    background: url(../images/elm/ht4.png) center/contain repeat-x;
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
     -webkit-transform: scale(1);
@@ -4558,7 +4585,7 @@ canvas[resize] {
     .ourWorkContent ul li .listWorks p:nth-child(odd) {
         padding-right: 20px;
     }
-    .hanhtinh2.small2 {
+    .hanhtinh5.small2 {
         right: 23%;
         top: -80%;
     }
@@ -4671,9 +4698,9 @@ canvas[resize] {
     .homeElms .hanhtinh1 > div {
         top: -89px;
         left: -89px;
-        -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-        transform: scale(0.6);
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
     }
     .ourWorkContent ul li p span:after {
         content: "";
@@ -4729,7 +4756,7 @@ canvas[resize] {
         right: 33%;
         width: 25px;
     }
-    .homeElms .hanhtinh2.small2 > div {
+    .homeElms .hanhtinh5.small2 > div {
         -webkit-transform: scale(0.6) rotate(-48deg);
         -ms-transform: scale(0.6) rotate(-48deg);
         transform: scale(0.6) rotate(-48deg);
@@ -5005,7 +5032,8 @@ canvas[resize] {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .hanhtinh2 {
+    .hanhtinh2,
+    .hanhtinh5 {
         left: 15%;
         top: 220px;
     }
@@ -5109,7 +5137,8 @@ canvas[resize] {
     #navMenu li a {
         font-size: 80px;
     }
-    .hanhtinh2 {
+    .hanhtinh2,
+    .hanhtinh5 {
         left: 20%;
     }
     .homeElms img.elm2 {
@@ -5495,7 +5524,7 @@ canvas[resize] {
         bottom: 65%;
         right: 20px;
     }
-    .homeElms .hanhtinh2.small2 > div {
+    .homeElms .hanhtinh5.small2 > div {
         -webkit-transform: scale(0.5) rotate(-48deg);
         -ms-transform: scale(0.5) rotate(-48deg);
         transform: scale(0.5) rotate(-48deg);
@@ -5906,7 +5935,8 @@ canvas[resize] {
         padding-left: 140px;
         width: calc(100% - 50vh - 80px);
     }
-    .hanhtinh2 {
+    .hanhtinh2,
+    .hanhtinh5 {
         top: 120px;
     }
     .hanhtinh2 > div {
@@ -6203,7 +6233,7 @@ canvas[resize] {
     .homeElms .hanhtinh1 {
         left: -20px;
     }
-    .homeElms .hanhtinh2.small2 {
+    .homeElms .hanhtinh5.small2 {
         right: 20px;
         left: auto;
         top: -70%;
@@ -6609,11 +6639,11 @@ canvas[resize] {
         top: -120px;
         left: 10%;
     }
-    .homeElms .hanhtinh2.small2 {
+    .homeElms .hanhtinh5.small2 {
         right: 5%;
         top: -110px;
     }
-    .homeElms .hanhtinh2.small2 > div {
+    .homeElms .hanhtinh5.small2 > div {
         -webkit-transform: scale(0.25) rotate(-48deg);
         -ms-transform: scale(0.25) rotate(-48deg);
         transform: scale(0.25) rotate(-48deg);
