@@ -1289,3 +1289,12 @@ var BY = {
   makeStars: function () {},
 };
 BY.init();
+
+$('.logo').mouseenter( function(){
+  $(this).toggleClass('hover');
+  $(this).find('img').attr('src', 'images/logo.png');
+});
+$('.logo').mouseleave( function (){
+  $(this).toggleClass('hover');
+  $(this).find('img').attr('src', 'images/logo-light.png');
+});
