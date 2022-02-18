@@ -2290,7 +2290,6 @@ sub {
     right: 20px;
     width: 400px;
     position: absolute;
-    z-index: 99;
 }
 #pPeople .pageElms {
     left: 0;
@@ -2572,27 +2571,38 @@ sub {
     line-height: 1.2;
     color: #333132;
 }
-.ourPeople li .text table {
+.ourPeople li .text table,
+.ourWork .copy table  {
     margin-right: 50px;
     margin-bottom: 50px;
 }
-.ourPeople li .text .table-show-mb{
+.ourPeople li .text .table-show-mb,
+.ourWork .copy .table-show-mb{
     display: none;
 }
-.ourPeople li .text table p{
+.ourPeople li .text table p,
+.ourWork .copy table p{
     font-size: 20px;
+    padding: 0 !important;
 } 
 .ourPeople li .text table td,
-.ourPeople li .text table th{
+.ourPeople li .text table th,
+.ourWork .copy table td,
+.ourWork .copy table th{
     vertical-align: top;
     padding: 0.75rem;
-    border: 2px solid #000;
+    border-right: 2px solid #000;
+    width: calc(100%/3);
 }
-.ourPeople li .text table th{
+.ourPeople li .text table td:last-child,
+.ourPeople li .text table th:last-child,
+.ourWork .copy table td:last-child,
+.ourWork .copy table th:last-child {
+    border: none;
+}
+.ourPeople li .text table th,
+.ourWork .copy table th{
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
-}
-.ourPeople li .text table p {
-    padding: 0 !important;
 }
 .ourPeople li .text h4 {
     font-size: 100px;
@@ -3698,6 +3708,16 @@ canvas[resize] {
     bottom: 0;
     left: 130px;
     right: 30px;
+}
+.peopleWrap .hanhtinh2{
+    top: 12%;
+    right: 25px;
+    left: auto;
+}
+.peopleWrap .hanhtinh4{
+    top: 50%;
+    left: auto;
+    right: 250px;
 }
 .peopleWrap .item {
     position: absolute;
@@ -5315,6 +5335,10 @@ canvas[resize] {
         width: 350px;
         display: none;
     }
+    .peopleWrap .hanhtinh2,
+    .peopleWrap .hanhtinh4 {
+        display: none;
+    }
     #pOurWork .copy {
         padding: 115px 30px 150px 160px;
     }
@@ -6061,10 +6085,12 @@ canvas[resize] {
         -ms-transform: scale(0.7);
         transform: scale(0.7);
     }
-    .ourPeople li .text table{
+    .ourPeople li .text table,
+    .ourWork .copy table{
         display: none;
     }
-    .ourPeople li .text .table-show-mb{
+    .ourPeople li .text .table-show-mb,
+    .ourWork .copy .table-show-mb{
         display: block;
         margin-bottom: 80px;
     }
