@@ -366,7 +366,7 @@ var BY = {
             autoAlpha: 1,
             onComplete: function () {
               ++a >= 5 && (a = 1),
-                (e = path_resource + "images/gif/c" + a + ".gif"),
+                (e = path_resource + "images/whale" + a + ".png"),
                 TweenMax.to(".astro .active", 1, {
                   delay: 7.5,
                   autoAlpha: 0,
@@ -1050,37 +1050,14 @@ var BY = {
         if (!e && !$(this).hasClass("display")) {
           (e = !1), $(this).addClass("display");
           var a = $(this).attr("data");
-          $(".astro .active").attr("src", a),
-            TweenMax.set(".astro .active", { autoAlpha: 0 }),
-            TweenMax.to(".astro .default", 0.1, {
-              autoAlpha: 0,
-              ease: Power4.easeOut,
-            }),
-            TweenMax.to(".astro .active", 0.1, {
-              autoAlpha: 1,
-              ease: Power4.easeOut,
-              onComplete: function () {
-                e = !1;
-              },
-            });
+          $(".astro .active div").css("background-image", `url(.../${a})`);
         }
       }),
         $("#navMenu li").mouseleave(function () {
           e ||
             ((e = !1),
-            $("#navMenu li").removeClass("display"),
-            TweenMax.set(".astro .default", { autoAlpha: 0 }),
-            TweenMax.to(".astro .active", 0.1, {
-              autoAlpha: 0,
-              ease: Power4.easeOut,
-            }),
-            TweenMax.to(".astro .default", 0.1, {
-              autoAlpha: 1,
-              ease: Power4.easeOut,
-              onComplete: function () {
-                e = !1;
-              },
-            }));
+            $("#navMenu li").removeClass("display")),
+            $(".astro .active div").css("background-image", `url('../images/whale1.png')`)
         });
     },
     disableClick: function () {
