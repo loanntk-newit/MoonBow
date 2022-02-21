@@ -2135,6 +2135,15 @@ sub {
     width: 70%;
     z-index: 2;
 }
+.astro #whale1,
+.astro #whale2 {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    margin-left: -200px;
+    -webkit-animation: 4s infinite alternate bounce;
+    animation: 4s infinite alternate bounce;
+}
 .astro img {
     width: 400px;
     position: absolute;
@@ -3277,7 +3286,7 @@ canvas[resize] {
         background-position: 0;
     }
     to {
-        background-position: -48000px;
+        background-position: -60000px;
     }
 }
 .hanhtinh1 {
@@ -3461,7 +3470,13 @@ canvas[resize] {
 .nextProject a {
     display: block;
 }
-#clound,
+#clound {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #whale1,
 #whale2 {
     width: 300px;
@@ -3487,37 +3502,37 @@ canvas[resize] {
 #whale1 > div {
     top: 0;
     left: 0;
-    background-image: url(../images/Whale-01.jpg);
-    background-size: calc(60000px * 1) 301px;
+    background-image: url(../images/whale1.jpg);
+    background-size: calc(42000px * 1) 300px;
     width: 100%;
     height: 100%;
     -webkit-animation: 8s steps(200) infinite cloundAni;
     animation: 8s steps(200) infinite cloundAni;
     position: absolute;
-    -webkit-transform: translate(-50%, -50%) scale(1.6);
-    -ms-transform: translate(-50%, -50%) scale(1.6);
-    transform: translate(-50%, -50%) scale(1.6);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
 }
 #whale2 > div {
     top: 0;
     left: 0;
-    background-image: url(../images/Whale-02.jpg);
-    background-size: calc(60000px * 1) 301px;
+    background-image: url(../images/whale2.jpg);
+    background-size: calc(42000px * 1) 300px;
     width: 100%;
     height: 100%;
     -webkit-animation: 8s steps(200) infinite cloundAni;
     animation: 8s steps(200) infinite cloundAni;
     position: absolute;
-    -webkit-transform: translate(-50%, -50%) scale(1.6);
-    -ms-transform: translate(-50%, -50%) scale(1.6);
-    transform: translate(-50%, -50%) scale(1.6);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
 }
 @-webkit-keyframes cloundAni {
     from {
         background-position: 0;
     }
     to {
-        background-position: calc(60000px * 1 * (-1));
+        background-position: -60000px;
     }
 }
 .preLoader {
@@ -4190,6 +4205,11 @@ canvas[resize] {
         margin-left: -180px;
         top: -300px;
     }
+    .astro > #whale1,
+    .astro > #whale2 {
+        margin-left: -180px;
+        top: -300px;
+    }
     .astro .active {
         top: -350px;
     }
@@ -4386,6 +4406,11 @@ canvas[resize] {
         top: -250px;
         width: 320px;
         margin-left: -160px;
+    }    
+    .astro > #whale1,
+    .astro > #whale2 {
+        top: -250px;
+        margin-left: -160px;
     }
     .astro .active {
         top: -300px;
@@ -4417,12 +4442,16 @@ canvas[resize] {
         -webkit-transform: rotateY(0) translate3d(-260px, 0, 150px);
         transform: rotateY(0) translate3d(-260px, 0, 150px);
     }
-    #clound > div,
-    #whale1 > div,
-    #whale2 > div {
+    #clound > div{
         -webkit-transform: translate(-50%, -50%) scale(1.5);
         -ms-transform: translate(-50%, -50%) scale(1.5);
         transform: translate(-50%, -50%) scale(1.5);
+    }
+    #whale1 > div,
+    #whale2 > div {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
     }
     .homeElms img {
         max-width: 550px;
@@ -4925,7 +4954,9 @@ canvas[resize] {
     .ourPeople li .text h4 {
         font-size: 70px;
     }
-    .astro > img {
+    .astro > img,
+    .astro > #whale1,
+    .astro > #whale2 {
         top: -230px;
     }
     .ourPeople li:nth-child(even) .thumb {
@@ -5165,12 +5196,16 @@ canvas[resize] {
     .socials a.email {
         background: url(../images/email.png) center/cover no-repeat #fff;
     }
-    #clound > div,
-    #whale1 > div,
-    #whale2 > div{
+    #clound > div {
         -webkit-transform: translate(-50%, -50%) scale(3);
         -ms-transform: translate(-50%, -50%) scale(3);
         transform: translate(-50%, -50%) scale(3);
+    }
+    #whale1 > div,
+    #whale2 > div{
+        -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+        transform: scale(3);
     }
     .barBtnMenu {
         padding: 30px 45px;
@@ -5214,7 +5249,9 @@ canvas[resize] {
         -webkit-transform: rotateY(40deg) translate3d(200px, 0, 200px);
         transform: rotateY(40deg) translate3d(200px, 0, 200px);
     }
-    .astro > img {
+    .astro > img,
+    .astro > #whale1,
+    .astro > #whale2 {
         top: -300px;
     }
     .homeElms {
@@ -6618,12 +6655,16 @@ canvas[resize] {
     .mb .barLinks p.ourProject {
         font-size: 14px;
     }
-    #clound > div,
-    #whale1 > div,
-    #whale2 > div {
+    #clound > div {
         -webkit-transform: translate(-50%, -50%) scale(1.5);
         -ms-transform: translate(-50%, -50%) scale(1.5);
         transform: translate(-50%, -50%) scale(1.5);
+    }
+    #whale1 > div,
+    #whale2 > div {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
     }
     .leftBar .socials {
         left: 20px;
@@ -6669,6 +6710,12 @@ canvas[resize] {
     .astro > img {
         top: -40vw;
         width: 40vw;
+        margin-left: -15vw;
+    }
+
+    .astro > #whale1,
+    .astro > #whale2 {
+        top: -40vw;
         margin-left: -15vw;
     }
     .homeElms {
