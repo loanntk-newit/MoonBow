@@ -3514,7 +3514,7 @@ canvas[resize] {
     transform: scale(1.3);
 }
 #whale1 > div {
-    background-image: url(../images/whale2.jpg);
+    background-image: url(../images/whale2.png);
 }
 @-webkit-keyframes cloundAni {
     from {
