@@ -2900,6 +2900,25 @@ sub {
     display: none;
     padding: 10px 300px 50px 0;
 }
+.ourWorkDetailContent .listWorks p {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    font-size: 35px;
+    width: calc(50% - 5px);
+}
+.ourWorkDetailContent .listWorks p:nth-child(odd) {
+    padding-right: 50px;
+}
+.ourWorkDetailContent .listWorks p span,
+.ourWorkDetailContent .listWorks p a {
+    color: #000;
+    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+}
+.ourWorkDetailContent .listWorks p span:hover,
+.ourWorkDetailContent .listWorks p a:hover {
+    color: #fff;
+}
 #pOurWork .ourWorkContent .listWorks p {
     display: inline-block;
     vertical-align: top;
@@ -2925,7 +2944,7 @@ sub {
 #pCourseDetail .copy {
     top: 160px;
     bottom: 100px;
-    width: 55%;
+    width: calc(66.666% - 50px);
     right: 30px;
     position: absolute;
     z-index: 99;
@@ -2954,13 +2973,13 @@ sub {
 }
 .ourWorkDetailContent h5, .ourWorkDetailContent p {
     padding-bottom: 30px;
-    font-size: 35px;
+    font-size: 20px;
     color: #333132;
     line-height: 1.2;
 }
 .brand {
     position: relative;
-    width: 50%;
+    width: 33.333%;
     height: 100%;
 }
 .brand .pageElms {
@@ -4128,14 +4147,8 @@ canvas[resize] {
     .ourWorkDetailContent h4 {
         font-size: 50px;
     }
-    .ourWorkDetailContent h5, .ourWorkDetailContent p {
-        font-size: 30px;
-    }
-    #pCourseDetail .copy {
-        width: 450px;
-    }
     .brandCopy {
-        padding-top: 150px;
+        padding-top: 50px;
     }
     .brand .pageElms img:nth-child(1) {
         width: 320px;
@@ -4566,7 +4579,7 @@ canvas[resize] {
     }
     #pCourseDetail .copy {
         top: 110px;
-        width: 400px;
+        width: 600px;
         right: 120px;
     }
     .brandCopy h2 {
@@ -4578,7 +4591,6 @@ canvas[resize] {
         font-size: 40px;
     }
     .ourWorkDetailContent h5, .ourWorkDetailContent p {
-        font-size: 25px;
         padding-bottom: 20px;
     }
     .brandCopy {
@@ -5817,11 +5829,8 @@ canvas[resize] {
         transform: rotate(10deg) scale(0.4);
     }
     #pCourseDetail .copy {
-        width: 32%;
+        width: 45%;
         right: 70px;
-    }
-    .ourWorkDetailContent p {
-        font-size: 20px;
     }
     .brandCopy {
         padding: 200px 0 100px 120px;
@@ -6228,9 +6237,6 @@ canvas[resize] {
         -webkit-transform: rotateY(45deg) translate3d(130px, 0, 200px);
         transform: rotateY(45deg) translate3d(130px, 0, 200px);
         text-shadow: none;
-    }
-    .ourWorkDetailContent p {
-        font-size: 20px;
     }
     .leftBar {
         background: #fff;
@@ -7030,7 +7036,6 @@ canvas[resize] {
         font-size: 27px;
     }
     .ourWorkDetailContent h5, .ourWorkDetailContent p {
-        font-size: 22px;
         line-height: 1.3;
     }
     .btnPlayVideo {
