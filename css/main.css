@@ -2300,6 +2300,11 @@ sub {
     width: 400px;
     position: absolute;
 }
+#pPeople .twoColumns .elmRight {
+    position: relative;
+    width: 400px;
+    margin-top: -50px;
+}
 #pPeople .pageElms {
     left: 0;
     top: 0;
@@ -2571,6 +2576,26 @@ sub {
 .ourPeople li .thumb .pageElms {
     display: none;
 }
+.ourPeople.twoColumns li .text {
+    display: flex;
+}
+.ourPeople.twoColumns li .text .columnRight{
+    width: 66.666%;
+}
+.ourPeople.twoColumns li .text .columnLeft h5{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+}
+.ourPeople.twoColumns li .text .columnRight p,
+.ourPeople.twoColumns li .text .columnRight h5{
+    font-size: 20px;
+}
+.ourPeople.twoColumns li .text .columnLeft{
+    width: 33.333%;
+}
 .ourPeople li .text {
     display: block;
 }
@@ -2579,6 +2604,9 @@ sub {
     padding: 0 300px 30px 0;
     line-height: 1.2;
     color: #333132;
+}
+.ourPeople.twoColumns li .text p {
+    padding: 0 100px 30px 0;
 }
 .ourPeople li .text table,
 .ourWork .copy table  {
@@ -4108,6 +4136,9 @@ canvas[resize] {
         font-size: 30px;
         padding-right: 150px;
     }
+    .ourPeople.twoColumns li .text p {
+        padding-right: 50px;
+    }
     .ourPeople li .thumb {
         margin-top: 80px;
     }
@@ -4168,6 +4199,9 @@ canvas[resize] {
     #pPeople .elmRight {
         top: 20%;
         right: 60px;
+        width: 350px;
+    }
+    #pPeople .twoColumns .elmRight {
         width: 350px;
     }
     .brandEle .char {
@@ -4484,6 +4518,12 @@ canvas[resize] {
     }
     .ourPeople li .text h5 {
         font-size: 18px;
+    }
+    .ourPeople.twoColumns li .text .columnLeft h5{
+        font-size: 30px;
+    }
+    .ourPeople.twoColumns li .text h4 {
+        font-size: 70px;
     }
     .ourPeople li .text p {
         font-size: 25px;
@@ -5017,13 +5057,33 @@ canvas[resize] {
     .brand .pageElms .hanhtinh4 {
         top: 100px;
     }
+    .ourPeople.twoColumns li .text{
+        display: block;
+    }
+    .ourPeople.twoColumns li .text .columnLeft{
+        width: 100%;
+    }
     .ourPeople li .text h4 {
         font-size: 90px;
+    }
+    #pPeople .twoColumns .elmRight {
+        width: 320px;
+        display: none;
     }
     #pPeople .elmRight {
         width: 320px;
         right: 0;
         top: 16%;
+    }
+    .ourPeople.twoColumns li .text .columnRight{
+        width: 100%;
+    }
+    .ourPeople.twoColumns{
+        bottom: 100px;
+        overflow: auto;
+    }
+    .ourPeople.twoColumns .nano > .nano-content {
+        position: static;
     }
     #pAbout .copy .nano > .nano-content {
         padding-right: 40%;
