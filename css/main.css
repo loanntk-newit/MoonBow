@@ -2525,10 +2525,11 @@ sub {
     height: 100%;
 }
 .ourPeople li {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 50px 0 100px;
-    clear: both;
-    overflow: hidden;
+    height: 100%;
 }
 .ourPeople li.display {
     opacity: 1;
@@ -2579,9 +2580,6 @@ sub {
 .ourPeople.twoColumns li .text {
     display: flex;
 }
-.ourPeople.twoColumns li .text .columnRight{
-    width: 66.666%;
-}
 .ourPeople.twoColumns li .text .columnLeft h5{
     font-size: 40px;
     text-transform: uppercase;
@@ -2597,11 +2595,16 @@ sub {
     width: 33.333%;
 }
 .ourPeople li .text {
-    display: block;
+    top: 160px;
+    bottom: 100px;
+    width: calc(60% - 50px);
+    right: 30px;
+    position: absolute;
+    z-index: 99;
 }
 .ourPeople li .text p {
     font-size: 35px;
-    padding: 0 300px 30px 0;
+    padding: 0 50px 30px 0;
     line-height: 1.2;
     color: #333132;
 }
@@ -2641,35 +2644,11 @@ sub {
 .ourWork .copy table th{
     font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
 }
-.ourPeople li .text h4 {
-    font-size: 100px;
-    text-transform: uppercase;
-    padding-bottom: 50px;
-    line-height: unset;
-    color: #fff;
-}
-.ourPeople li .text h4 span {
-    display: inline-block;
-    -webkit-text-stroke: 2px #000;
-    color: #fff;
-}
-.ourPeople li .text h4:hover span {
-    -webkit-text-stroke: 0 #000;
-    text-shadow: none;
-    background: -webkit-gradient(linear, left top, right top, from(#25936a), color-stop(30%, #e95447), to(#f7e693));
-    background: -o-linear-gradient(left, #1680fb 0, #1fbcf7 30%, #23d3b2 100%);
-    background: linear-gradient(to right, #25936a 0, #e95447 30%, #f7e693 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: NunitoSans-Bold, Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
-}
 .ourPeople li .text h5 {
     font-size: 25px;
     text-transform: uppercase;
     position: relative;
     padding: 20px 0 15px;
-    margin-bottom: 50px;
 }
 .ourPeople li:nth-child(even) .thumb {
     float: right;
@@ -2972,7 +2951,7 @@ sub {
 #pCourseDetail .copy {
     top: 160px;
     bottom: 100px;
-    width: calc(66.666% - 50px);
+    width: calc(60% - 50px);
     right: 30px;
     position: absolute;
     z-index: 99;
@@ -2993,13 +2972,17 @@ sub {
     top: 0;
     bottom: 20px;
 }
-.ourWorkDetailContent h4 {
+.ourWorkDetailContent h4,
+.ourPeople li .text h4 {
     text-transform: uppercase;
     font-size: 55px;
     padding-bottom: 10px;
     padding-left: 50px;
 }
-.ourWorkDetailContent h5, .ourWorkDetailContent p {
+.ourWorkDetailContent h5, 
+.ourWorkDetailContent p,
+.ourPeople li .text p,
+.ourPeople li .text h5 {
     padding-bottom: 30px;
     font-size: 20px;
     color: #333132;
@@ -3557,8 +3540,16 @@ canvas[resize] {
     animation: 8s steps(140) infinite whaleAni;
     position: absolute;
 }
-#whale1 > div {
+#whale2.active > div {
+    top: 0;
+    left: 0;
     background-image: url(../images/whale2.png);
+    background-size: calc(42000px * 1) 300px;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: 8s steps(140) infinite whaleAni;
+    animation: 8s steps(140) infinite whaleAni;
+    position: absolute;
 }
 @-webkit-keyframes cloundAni {
     from {
@@ -3575,6 +3566,13 @@ canvas[resize] {
     to {
         background-position: -42000px;
     }
+}
+.brandEle .whale {
+    -webkit-animation: 4s infinite alternate bounce;
+    animation: 4s infinite alternate bounce;
+    top: auto !important;
+    bottom: -250px;
+    left: 50px !important;
 }
 .preLoader {
     position: absolute;
@@ -3790,20 +3788,12 @@ canvas[resize] {
 }
 .peopleWrap {
     position: absolute;
-    top: 110px;
-    bottom: 0;
-    left: 130px;
-    right: 30px;
-}
-.peopleWrap .hanhtinh2{
-    top: 12%;
-    right: 25px;
-    left: auto;
-}
-.peopleWrap .hanhtinh4{
-    top: 50%;
-    left: auto;
-    right: 250px;
+    top: 0;
+    left: 0;
+    border: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 .peopleWrap .item {
     position: absolute;
@@ -3828,6 +3818,7 @@ canvas[resize] {
     -o-transition-delay: 0.5s;
     transition-delay: 0.5s;
     z-index: 10;
+    overflow: unset;
 }
 .prl {
     display: block;
@@ -4126,15 +4117,11 @@ canvas[resize] {
         bottom: 400px;
         top: 300px;
     }
-    .ourPeople li .text h4 {
-        font-size: 90px;
-    }
     .ourPeople li .text h5 {
         font-size: 22px;
     }
     .ourPeople li .text p {
         font-size: 30px;
-        padding-right: 150px;
     }
     .ourPeople.twoColumns li .text p {
         padding-right: 50px;
@@ -4175,7 +4162,8 @@ canvas[resize] {
         padding-bottom: 20px;
     }
     .brandCopy h5,
-    .ourWorkDetailContent h4 {
+    .ourWorkDetailContent h4,
+    .ourPeople li .text h4 {
         font-size: 50px;
     }
     .brandCopy {
@@ -4345,9 +4333,6 @@ canvas[resize] {
         max-width: none;
         width: 400px;
     }
-    .peopleWrap {
-        left: 100px;
-    }
     .ourPeople li:nth-child(even) .text {
         padding-left: 200px;
         width: calc(100% - 50vh - 270px);
@@ -4513,9 +4498,6 @@ canvas[resize] {
     .ourPeople li {
         margin-bottom: 50px;
     }
-    .ourPeople li .text h4 {
-        font-size: 75px;
-    }
     .ourPeople li .text h5 {
         font-size: 18px;
     }
@@ -4550,11 +4532,6 @@ canvas[resize] {
     }
     #pPeople .pageElms img:nth-child(4) {
         left: 43%;
-    }
-    .peopleWrap {
-        top: 80px;
-        left: 150px;
-        right: 120px;
     }
     #pOurWork .ourWorkContent ul {
         padding-top: 150px;
@@ -4617,7 +4594,8 @@ canvas[resize] {
         right: 150px;
         left: auto;
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy,
+    .ourPeople li .text {
         top: 110px;
         width: 600px;
         right: 120px;
@@ -4627,7 +4605,8 @@ canvas[resize] {
         padding-bottom: 20px;
     }
     .brandCopy h5,
-    .ourWorkDetailContent h4 {
+    .ourWorkDetailContent h4,
+    .ourPeople li .text h4 {
         font-size: 40px;
     }
     .ourWorkDetailContent h5, .ourWorkDetailContent p {
@@ -4991,9 +4970,6 @@ canvas[resize] {
     #pPeople .elmRight {
         right: 0;
     }
-    .ourPeople li .text h4 {
-        font-size: 70px;
-    }
     .astro > img,
     .astro > #whale1,
     .astro > #whale2 {
@@ -5004,9 +4980,6 @@ canvas[resize] {
     }
     .ourPeople li:nth-child(even) .text {
         width: calc(100% - 50vh - 260px);
-    }
-    .peopleWrap {
-        left: 100px;
     }
 }
 @media screen and (max-width: 1366px) and (min-height: 900px) {
@@ -5044,7 +5017,8 @@ canvas[resize] {
     .astro {
         width: 220px;
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy,
+    .ourPeople li .text {
         top: 150px;
         bottom: 100px;
     }
@@ -5062,9 +5036,6 @@ canvas[resize] {
     }
     .ourPeople.twoColumns li .text .columnLeft{
         width: 100%;
-    }
-    .ourPeople li .text h4 {
-        font-size: 90px;
     }
     #pPeople .twoColumns .elmRight {
         width: 320px;
@@ -5192,19 +5163,12 @@ canvas[resize] {
         top: 270px;
         right: 20%;
     }
-    .peopleWrap {
-        left: 100px;
-        top: 130px;
-    }
     .ourPeople li {
         margin-top: 20px;
     }
     .ourPeople li .thumb {
         margin-top: 90px;
         width: 40vh;
-    }
-    .ourPeople li .text p {
-        padding-right: 50px;
     }
     .ourPeople li:nth-child(even) .thumb {
         margin-right: 105px;
@@ -5458,9 +5422,6 @@ canvas[resize] {
         height: auto;
         padding: 20px 300px;
     }
-    .ourPeople li .text h4 {
-        font-size: 90px;
-    }
     #pPeople .elmRight {
         top: 60%;
         width: 350px;
@@ -5551,7 +5512,8 @@ canvas[resize] {
         right: -90px;
         display: none;
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy,
+    .ourPeople li .text {
         position: relative;
         top: auto;
         bottom: auto;
@@ -5602,13 +5564,6 @@ canvas[resize] {
     .gallery .char {
         top: 100px;
         right: 40px;
-    }
-    .peopleWrap {
-        left: 0;
-        right: -20px;
-        top: 155px;
-        bottom: 80px;
-        padding-right: 20px;
     }
     .ourPeople li .thumb {
         margin: 60px auto 20px;
@@ -5816,10 +5771,6 @@ canvas[resize] {
         right: 0;
         width: 250px;
     }
-    .ourPeople li .text h4 {
-        font-size: 70px;
-        padding-bottom: 30px;
-    }
     .ourPeople li .text h5 {
         margin-bottom: 30px;
     }
@@ -5888,7 +5839,8 @@ canvas[resize] {
         -ms-transform: rotate(10deg) scale(0.4);
         transform: rotate(10deg) scale(0.4);
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy,
+    .ourPeople li .text {
         width: 45%;
         right: 70px;
     }
@@ -5898,7 +5850,8 @@ canvas[resize] {
     .brandCopy h5 {
         font-size: 30px;
     }
-    .ourWorkDetailContent h4 {
+    .ourWorkDetailContent h4,
+    .ourPeople li .text h4 {
         font-size: 30px;
         padding-left: 0;
     }
@@ -6007,7 +5960,6 @@ canvas[resize] {
         right: 70px;
     }
     .ourPeople li .text p {
-        padding-right: 50px;
         font-size: 20px;
     }
     #pOurWork .pageElms img:nth-child(1) {
@@ -6059,12 +6011,6 @@ canvas[resize] {
         -webkit-transform: rotate(-48deg) scale(0.4);
         -ms-transform: rotate(-48deg) scale(0.4);
         transform: rotate(-48deg) scale(0.4);
-    }
-    .peopleWrap {
-        left: 70px;
-        right: 70px;
-        bottom: 100px;
-        top: 80px;
     }
     #pPeople .pageElms .hanhtinh1 > div {
         -webkit-transform: scale(0.5);
@@ -6471,12 +6417,8 @@ canvas[resize] {
     .ourPeople li .text,
     .ourPeople li:nth-child(even) .text {
         height: auto;
-        padding: 0 50px;
+        padding: 0;
         width: 100%;
-    }
-    .ourPeople li .text h4 {
-        font-size: 80px;
-        padding-bottom: 30px;
     }
     .ourPeople li .text h5 {
         margin-bottom: 30px;
@@ -6504,7 +6446,8 @@ canvas[resize] {
     #pConnect .pageElms .hanhtinh3 {
         right: -10px;
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy,
+    .ourPeople li .text {
         position: relative;
         top: auto;
         bottom: auto;
@@ -6514,7 +6457,11 @@ canvas[resize] {
         padding: 0;
         margin-top: -120px;
     }
-    .ourWork li {
+    .ourPeople li .text {
+        margin-top: 50px;
+    }
+    .ourWork li,
+    .peopleWrap .item {
         position: relative;
         top: auto;
         bottom: auto;
@@ -6522,10 +6469,14 @@ canvas[resize] {
         right: auto;
         width: 100%;
         opacity: 1;
-        margin: 50px 0;
+        margin: 0;
         height: auto;
     }
-    .ourWork {
+    .peopleWrap .item {
+        overflow: hidden;
+    }
+    .ourWork,
+    .peopleWrap {
         position: absolute;
         top: 75px;
         left: 100px;
@@ -6638,10 +6589,6 @@ canvas[resize] {
     }
     .peopleTab li {
         font-size: 1.4em;
-    }
-    .peopleWrap {
-        left: 100px;
-        right: 100px;
     }
     .ourWorkContent ul li h4 {
         font-size: 45px;
@@ -6925,15 +6872,6 @@ canvas[resize] {
     .ourPeople li .thumb .thumbs {
         margin-top: 40px;
     }
-    .peopleWrap {
-        left: 0;
-        top: 110px;
-        right: 0;
-        bottom: 0;
-    }
-    .peopleWrap .item {
-        overflow: hidden;
-    }
     .ourPeople {
         position: absolute;
         top: 0;
@@ -6942,6 +6880,7 @@ canvas[resize] {
         right: -20px;
         width: auto;
         padding: 0 20px 0 0;
+        margin: 50px;
     }
     .ourPeople li .thumb {
         width: 65vw;
@@ -6990,10 +6929,6 @@ canvas[resize] {
         width: 65vw;
         margin: 0 auto;
         float: none;
-    }
-    .ourPeople li .text h4 {
-        font-size: 55px;
-        padding-bottom: 20px;
     }
     .ourPeople li .text h5 {
         margin-bottom: 20px;
@@ -7092,7 +7027,8 @@ canvas[resize] {
         margin-bottom: 20px;
     }
     .brandCopy h5,
-    .ourWorkDetailContent h4 {
+    .ourWorkDetailContent h4,
+    .ourPeople li .text h4 {
         font-size: 27px;
     }
     .ourWorkDetailContent h5, .ourWorkDetailContent p {
@@ -7116,8 +7052,11 @@ canvas[resize] {
         -ms-transform: translateY(-35px);
         transform: translateY(-35px);
     }
-    #pCourseDetail .copy {
+    #pCourseDetail .copy{
         margin-top: -30px;
+    }
+    .ourPeople li .text {
+        margin-top: 30px;
     }
     .ourWork li {
         margin-bottom: 50px;
@@ -7272,5 +7211,19 @@ canvas[resize] {
     .peopleTab li {
         padding: 0 5px;
         font-size: 0.9em;
+    }
+    .peopleWrap{
+        left: 0;
+        top: 110px;
+        right: 0;
+        bottom: 0;
+        padding-right: 0;
+    }
+    .brand {
+        width: 65vw;
+        margin: 0 auto;
+    }
+    .brandEle .whale {
+        display: none;
     }
 }
