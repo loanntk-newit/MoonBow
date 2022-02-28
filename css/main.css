@@ -781,6 +781,11 @@ sub {
 .barContain .item .elms {
     width: auto;
 }
+.barContain .item .elms .whale{
+    transform: scale(1.5);
+    left: 15% !important;
+    z-index: 99;
+}
 .barBtnMenu {
     width: 66px;
     height: 66px;
@@ -990,7 +995,7 @@ sub {
 }
 .elms .hanhtinh3.gif4 {
     left: -50px;
-    top: 270px;
+    top: 350px;
     -webkit-animation: 5s infinite alternate bounceMenu;
     animation: 5s infinite alternate bounceMenu;
 }

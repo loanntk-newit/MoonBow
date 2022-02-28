@@ -671,7 +671,7 @@ var BY = {
           .set(".barContain .item", { visibility: "hidden" })
           .set(".barContain .item:eq(0)", { visibility: "visible" })
           .set($("#nav li"), { y: a, autoAlpha: 0 })
-          .set("#circleCanvas", { autoAlpha: 1 })
+          .set("#circleCanvas", { autoAlpha: 0.5 })
           .to(
             ".bar",
             1.2,
@@ -724,7 +724,7 @@ var BY = {
           .set(".barContain .item", { visibility: "hidden" })
           .set(".barContain .item:eq(1)", { visibility: "visible" })
           .set($(".bar .ourWorkContent li"), { y: a, autoAlpha: t })
-          .set("#circleCanvas", { autoAlpha: 1 })
+          .set("#circleCanvas", { autoAlpha: 0.5 })
           .to(
             ".bar",
             1.2,
