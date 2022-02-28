@@ -2984,6 +2984,7 @@ sub {
     font-size: 55px;
     padding-bottom: 10px;
     padding-left: 50px;
+    line-height: unset;
 }
 .ourWorkDetailContent h5, 
 .ourWorkDetailContent p,
@@ -3035,7 +3036,7 @@ sub {
     position: absolute;
 }
 .brandCopy {
-    padding: 180px 50px 100px 100px;
+    padding: 150px 50px 100px 100px;
     position: relative;
     z-index: 2;
 }
@@ -3044,9 +3045,9 @@ sub {
     left: 55px;
 }
 .brandCopy .hanhtinh2 {
-    top: 50px;
+    top: 100px;
     left: auto;
-    right: -100px;
+    right: -75px;
 }
 .brandCopy h2 {
     display: inline-block;
@@ -3057,6 +3058,7 @@ sub {
     -webkit-text-stroke: 2.2px #000;
     position: relative;
     color: #fff;
+    padding-top: 10px;
 }
 .brandCopy h2:hover {
     -webkit-text-stroke: 0;
@@ -3073,7 +3075,7 @@ sub {
     position: relative;
 }
 .brandEle h5 {
-    font-size: 56px;
+    font-size: 50px;
     text-transform: uppercase;
     line-height: 1;
     display: inline-block;
@@ -6716,7 +6718,7 @@ canvas[resize] {
     .astro > #whale1,
     .astro > #whale2 {
         top: -40vw;
-        margin-left: -15vw;
+        margin-left: -150px;
     }
     .homeElms {
         width: 100%;
