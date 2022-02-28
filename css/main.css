@@ -2240,10 +2240,11 @@ sub {
 #pAbout #copyServices h4 {
     padding-bottom: 0;
 }
-#pAbout .pageElms img:nth-child(1) {
+#pAbout .pageElms .whale {
+    top: auto;
     bottom: -30px;
+    left: auto;
     right: 90px;
-    width: 485px;
     -webkit-animation: 3.5s infinite alternate bounce;
     animation: 3.5s infinite alternate bounce;
 }
@@ -2263,9 +2264,9 @@ sub {
     animation: 3.5s infinite alternate bounceAbout;
 }
 #pAbout .pageElms .hanhtinh1 > div {
-    -webkit-transform: rotate(-5deg) scale(0.8);
-    -ms-transform: rotate(-5deg) scale(0.8);
-    transform: rotate(-5deg) scale(0.8);
+    -webkit-transform: rotate(-5deg) scale(0.5);
+    -ms-transform: rotate(-5deg) scale(0.5);
+    transform: rotate(-5deg) scale(0.5);
 }
 #pAbout .pageElms .hanhtinh2 {
     bottom: 455px;
@@ -2432,7 +2433,7 @@ sub {
     left: 90px;
     z-index: 1;
 }
-#pConnect .pageElms img:nth-child(1) {
+#pConnect .pageElms .whale {
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -2440,7 +2441,7 @@ sub {
     right: auto;
     -webkit-animation: none;
     animation: none;
-    width: 400px;
+    top: auto;
     bottom: 20%;
 }
 #pConnect .pageElms .hanhtinh1 {
@@ -2596,7 +2597,7 @@ sub {
 }
 .ourPeople li .text {
     top: 160px;
-    bottom: 100px;
+    bottom: 50px;
     width: calc(60% - 50px);
     right: 30px;
     position: absolute;
@@ -2614,7 +2615,7 @@ sub {
 .ourPeople li .text table,
 .ourWork .copy table  {
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .ourPeople li .text .table-show-mb,
 .ourWork .copy .table-show-mb{
@@ -2702,7 +2703,7 @@ sub {
     -webkit-animation: 3s infinite alternate bounce;
     animation: 3s infinite alternate bounce;
 }
-.pageElms img:nth-child(1) {
+.pageElms .whale {
     bottom: 10%;
     right: 15%;
     width: 300px;
@@ -4151,9 +4152,9 @@ canvas[resize] {
     #pOurWork .ourWorkContent .listWorks {
         padding: 10px 50px 50px 0;
     }
-    #pConnect .pageElms img:nth-child(1) {
+    #pConnect .pageElms .whale {
         right: 0;
-        width: 350px;
+        top: auto;
         bottom: 25%;
         left: 30px;
     }
@@ -4302,9 +4303,9 @@ canvas[resize] {
     #pAbout .copy h4 {
         font-size: 40px;
     }
-    #pAbout .pageElms img:nth-child(1) {
-        width: 400px;
+    #pAbout .pageElms .whale {
         right: 90px;
+        left: auto;
     }
     #pAbout .pageElms .hanhtinh2 {
         bottom: 350px;
@@ -4402,9 +4403,9 @@ canvas[resize] {
         font-size: 25px;
         padding-bottom: 40px;
     }
-    #pAbout .pageElms img:nth-child(1) {
+    #pAbout .pageElms .whale {
         right: 60px;
-        width: 360px;
+        left: auto;
     }
     #pAbout .pageElms img:nth-child(2) {
         bottom: 380px;
@@ -4561,10 +4562,6 @@ canvas[resize] {
     }
     #pConnect .copy .nano > .nano-pane {
         top: 30px;
-    }
-    #pConnect .pageElms img:nth-child(1) {
-        left: -20px;
-        width: 320px;
     }
     #pConnect .pageElms img:nth-child(4) {
         right: 3%;
@@ -5392,10 +5389,11 @@ canvas[resize] {
         top: auto;
         right: 20px;
     }
-    #pAbout .pageElms img:nth-child(1) {
+    #pAbout .pageElms .whale {
+        top: auto;
         bottom: 30px;
+        left: auto;
         right: 0;
-        width: 350px;
         max-width: none;
     }
     #pAbout .pageElms .hanhtinh2 {
@@ -5606,7 +5604,7 @@ canvas[resize] {
     .ourClient {
         padding: 20px 200px;
     }
-    #pConnect .pageElms img:nth-child(1) {
+    #pConnect .pageElms .whale {
         -webkit-transform: scaleX(-1);
         -ms-transform: scaleX(-1);
         transform: scaleX(-1);
@@ -5614,6 +5612,7 @@ canvas[resize] {
         right: auto;
         -webkit-animation: none;
         animation: none;
+        top: auto;
         bottom: 40%;
     }
     #pConnect .pageElms .hanhtinh1 {
@@ -5743,7 +5742,8 @@ canvas[resize] {
     #pAbout #copyInfo p > img {
         width: 200px;
     }
-    #pAbout .pageElms img:nth-child(1) {
+    #pAbout .pageElms .whale {
+        left: auto;
         right: 20px;
     }
     #pAbout .pageElms img:nth-child(4) {
@@ -5830,9 +5830,8 @@ canvas[resize] {
     .ourClient li {
         padding: 10px;
     }
-    #pConnect .pageElms img:nth-child(1) {
+    #pConnect .pageElms .whale {
         left: -60px;
-        width: 250px;
     }
     #pConnect .pageElms .hanhtinh3 > div {
         -webkit-transform: rotate(10deg) scale(0.4);
@@ -6184,9 +6183,8 @@ canvas[resize] {
         width: 50%;
         padding: 10px;
     }
-    #pConnect .pageElms img:nth-child(1) {
+    #pConnect .pageElms .whale {
         right: -60px;
-        width: 320px;
     }
     #pOurWork .ourWorkContent li p span:after {
         width: 20px;
@@ -6370,7 +6368,9 @@ canvas[resize] {
     #pAbout .pageElms {
         right: 0;
     }
-    #pAbout .pageElms img:nth-child(1) {
+    #pAbout .pageElms .whale {
+        top: auto;
+        left: auto;
         right: -20px;
         bottom: 10%;
     }
@@ -7053,7 +7053,7 @@ canvas[resize] {
         transform: translateY(-35px);
     }
     #pCourseDetail .copy{
-        margin-top: -30px;
+        margin-top: 30px;
     }
     .ourPeople li .text {
         margin-top: 30px;
@@ -7106,8 +7106,7 @@ canvas[resize] {
         -ms-transform: scale(0.7);
         transform: scale(0.7);
     }
-    #pConnect .pageElms img:nth-child(1) {
-        width: 45vw;
+    #pConnect .pageElms .whale {
         -webkit-transform: scaleX(-1);
         -ms-transform: scaleX(-1);
         transform: scaleX(-1);
@@ -7115,6 +7114,7 @@ canvas[resize] {
         right: auto;
         -webkit-animation: none;
         animation: none;
+        top: auto;
         bottom: 40%;
     }
     #pConnect .pageElms .hanhtinh1 {
