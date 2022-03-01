@@ -2598,7 +2598,7 @@ sub {
     font-size: 20px;
 }
 .ourPeople.twoColumns li .text .columnLeft{
-    width: 33.333%;
+    width: 40%;
 }
 .ourPeople li .text {
     top: 160px;
@@ -2997,7 +2997,7 @@ sub {
 }
 .brand {
     position: relative;
-    width: 33.333%;
+    width: 40%;
     height: 100%;
 }
 .brand .pageElms {
@@ -4174,9 +4174,6 @@ canvas[resize] {
     .ourPeople li .text h4 {
         font-size: 50px;
     }
-    .brandCopy {
-        padding-top: 50px;
-    }
     .brand .pageElms img:nth-child(1) {
         width: 320px;
         right: 160px;
@@ -4617,7 +4614,6 @@ canvas[resize] {
         padding-bottom: 20px;
     }
     .brandCopy {
-        padding-top: 120px;
         padding-left: 170px;
     }
     .brand .pageElms img:nth-child(1) {
