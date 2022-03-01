@@ -2981,7 +2981,7 @@ sub {
 .ourWorkDetailContent h4,
 .ourPeople li .text h4 {
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 50px;
     padding-bottom: 10px;
     padding-left: 50px;
     line-height: unset;
@@ -4128,9 +4128,6 @@ canvas[resize] {
     .ourPeople li .text h5 {
         font-size: 22px;
     }
-    .ourPeople li .text p {
-        font-size: 30px;
-    }
     .ourPeople.twoColumns li .text p {
         padding-right: 50px;
     }
@@ -4172,7 +4169,7 @@ canvas[resize] {
     .brandCopy h5,
     .ourWorkDetailContent h4,
     .ourPeople li .text h4 {
-        font-size: 50px;
+        font-size: 45px;
     }
     .brand .pageElms img:nth-child(1) {
         width: 320px;
@@ -4511,9 +4508,6 @@ canvas[resize] {
     }
     .ourPeople.twoColumns li .text h4 {
         font-size: 70px;
-    }
-    .ourPeople li .text p {
-        font-size: 25px;
     }
     .ourPeople li .text {
         padding: 0 0 0 60px;
