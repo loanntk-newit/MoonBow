@@ -4595,6 +4595,9 @@ canvas[resize] {
         width: 600px;
         right: 120px;
     }
+    .brand {
+        width: calc(100% - 700px);
+    }
     .brandCopy h2 {
         font-size: 90px;
         padding-bottom: 20px;
@@ -4606,9 +4609,6 @@ canvas[resize] {
     }
     .ourWorkDetailContent h5, .ourWorkDetailContent p {
         padding-bottom: 20px;
-    }
-    .brandCopy {
-        padding-left: 170px;
     }
     .brand .pageElms img:nth-child(1) {
         width: 290px;
